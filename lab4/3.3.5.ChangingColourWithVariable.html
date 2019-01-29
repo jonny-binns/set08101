@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <style type="text/css">
+              p{color:red}
+            </style>
+      </head>
+      <body>
+            <p><a href="#" onClick="colourChanger(); messageChanger();">Click ME</a></p>
+            <h1>OUTPUT:</h1>
+            <p id="redPara">I am RED</p>
+
+            <script>
+                var current = "red";
+
+                function colourChanger()
+                {
+                    if(current === "red")
+                      current = "blue";
+                    else if(current === "blue")
+                      current = "yellow";
+                    else if(current === "yellow")
+                      current = "green";
+                    else
+                      current = "red";
+
+                    document.getElementById("redPara").style.color = current;
+
+                }
+
+                var message = "I am RED";
+
+                function messageChanger()
+                {
+                    if(message == "I am RED")
+                      message = "I am BLUE";
+                    else if(message === "I am BLUE")
+                      message = "I am YELLOW"
+                    else if(message == "I am YELLOW")
+                      message = "I am Green"
+                    else
+                      message = "I am RED"
+
+                    document.getElementById("redPara").innerHTML = message;
+                }
+            </script>
+      </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <style type="text/css">
+                p {color:red}
+            </style>
+            <title>SET08101 - HTML CSS and Javascript</title>
+      </head>
+      <body>
+            <p><a href = "#" onClick="addMessage();">Turn the text blue</a></p>
+            <h1>OUTPUT:</h1>
+            <p id="redPara">I am RED</p>
+
+            <script>
+              function addMessage()
+              {
+                  document.getElementById("redPara").style.color = "blue";
+              }
+            </script>
+      </body>
+</html>
