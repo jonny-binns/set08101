@@ -1,0 +1,31 @@
+<html>
+    <head>
+          <link rel="stylesheet" type="text/css" href="rot13.css">
+          <title>ROT13 Encoder</title>
+    </head>
+    <body>
+          <h1>A ROT13 Encoder</h1>
+          <p>ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13)
+            is a simple letter substitution cipher that replaces a letter with
+            the 13th letter after it, in the alphabet. ROT13 is a special case
+            of the Caesar cipher which was developed in ancient Rome. Because
+            there are 26 letters (2 x 13) in the basic Latin alphabet, ROT13 is
+            its own inverse; that is, to undo ROT13, the same algorithm is
+            applied, so the same action can be used for encoding and decoding.
+             The algorithm provides virtually no cryptographic security, and is
+              often cited as a canonical example of weak encryption</p>
+
+          <div id="input_area">
+              <textarea rows="1" cols="50" autofocus id="message"> please enter your message</textarea>
+              <button type="button" onclick="encode(message)" id ="encode_button">Encode</button>
+          </div>
+
+          <div if="output_area">
+              <p>
+                This is your encoded message<br />
+                <div id="output"></div>
+              </p>
+          <div>
+            <script type="text/javascript" src="rot13.js"></script>
+    </body>
+</html>
